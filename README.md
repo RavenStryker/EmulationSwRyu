@@ -96,12 +96,10 @@ This folder is located in the user folder, which can be accessed by clicking `Op
 ## Features
 
 - **Audio**
-
   Audio output is entirely supported, audio input (microphone) isn't supported.
   We use C# wrappers for [OpenAL](https://openal-soft.org/), and [SDL2](https://www.libsdl.org/) & [libsoundio](http://libsound.io/) as fallbacks.
 
 - **CPU**
-
   The CPU emulator, ARMeilleure, emulates an ARMv8 CPU and currently has support for most 64-bit ARMv8 and some of the ARMv7 (and older) instructions, including partial 32-bit support.
   It translates the ARM code to a custom IR, performs a few optimizations, and turns that into x86 code.
   There are three memory manager options available depending on the user's preference, leveraging both software-based (slower) and host-mapped modes (much faster).
@@ -113,51 +111,27 @@ This folder is located in the user folder, which can be accessed by clicking `Op
   These improvements are permanent and do not require any extra launches going forward.
 
 - **GPU**
-
   The GPU emulator emulates the Switch's Maxwell GPU using either the OpenGL (version 4.5 minimum), Vulkan, or Metal (via MoltenVK) APIs through a custom build of OpenTK or Silk.NET respectively.
   There are currently six graphics enhancements available to the end user in Ryujinx: Disk Shader Caching, Resolution Scaling, Anti-Aliasing, Scaling Filters (including FSR), Anisotropic Filtering and Aspect Ratio Adjustment.
   These enhancements can be adjusted or toggled as desired in the GUI.
 
 - **Input**
-
   We currently have support for keyboard, mouse, touch input, JoyCon input support, and nearly all controllers.
   Motion controls are natively supported in most cases; for dual-JoyCon motion support, DS4Windows or BetterJoy are currently required.
   In all scenarios, you can set up everything inside the input configuration menu.
 
 - **DLC & Modifications**
-
   Ryujinx is able to manage add-on content/downloadable content through the GUI.
   Mods (romfs, exefs, and runtime mods such as cheats) are also supported;
   the GUI contains a shortcut to open the respective mods folder for a particular game.
 
 - **Configuration**
-
   The emulator has settings for enabling or disabling some logging, remapping controllers, and more.
   You can configure all of them through the graphical interface or manually through the config file, `Config.json`, found in the user folder which can be accessed by clicking `Open Ryujinx Folder` under the File menu in the GUI.
 
-## Contact
-
-If you have contributions, suggestions, need emulator support or just want to get in touch with the team, join our [Discord server](https://discord.com/invite/Ryujinx).
 You may also review our [FAQ](https://github.com/RavenStryker/EmulationSwRyu/wiki/Frequently-Asked-Questions).
 
-## Donations
-
-If you'd like to support the project financially, Ryujinx has an active Patreon campaign.
-
-<a href="https://www.patreon.com/ryujinx">
-    <img src="https://images.squarespace-cdn.com/content/v1/560c1d39e4b0b4fae0c9cf2a/1567548955044-WVD994WZP76EWF15T0L3/Patreon+Button.png?format=500w" width="150">
-</a>
-
-All developers working on the project do so in their free time, but the project has several expenses:
-* Hackable Nintendo Switch consoles to reverse-engineer the hardware
-* Additional computer hardware for testing purposes (e.g. GPUs to diagnose graphical bugs, etc.)
-* Licenses for various software development tools (e.g. Jetbrains, IDA)
-* Web hosting and infrastructure maintenance (e.g. LDN servers)
-
-All funds received through Patreon are considered a donation to support the project. Patrons receive early access to progress reports and exclusive access to developer interviews.
-
 ## License
-
 This software is licensed under the terms of the [MIT license](LICENSE.txt).
 This project makes use of code authored by the libvpx project, licensed under BSD and the ffmpeg project, licensed under LGPLv3.
 See [LICENSE.txt](LICENSE.txt) and [THIRDPARTY.md](distribution/legal/THIRDPARTY.md) for more details.

@@ -16,21 +16,6 @@
   <br />
 </p>
 
-<p align="center">
-    <a href="https://github.com/RavenStryker/EmulationSwRyu/actions/workflows/release.yml">
-        <img src="https://github.com/RavenStryker/EmulationSwRyu/actions/workflows/release.yml/badge.svg"
-            alt="">
-    </a>
-    <a href="https://crwd.in/ryujinx">
-        <img src="https://badges.crowdin.net/ryujinx/localized.svg"
-            alt="">
-    </a>
-    <a href="https://discord.com/invite/VkQYXAZ">
-        <img src="https://img.shields.io/discord/410208534861447168?color=5865F2&label=Ryujinx&logo=discord&logoColor=white"
-            alt="Discord">
-    </a>
-</p>
-
 ## Compatibility
 
 As of May 2024, Ryujinx has been tested on approximately 4,300 titles;
